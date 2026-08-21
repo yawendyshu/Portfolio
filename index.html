@@ -1,458 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./index.css" rel="stylesheet">
-    <title>徐雅玟 ‧ 作品集</title>
-    </head>
-    <body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>徐雅玟 ‧ 作品集</title>
+  <meta name="description" content="徐雅玟（Wendy Shu）軟體工程師作品集，Full-Stack 開發、無障礙網站與資訊安全實務經歷。">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
 
-    <!-- ======= Header/ Navbar ======= -->
-    <nav class="navbar navbar-b navbar-expand-md fixed-top" id="mainNav">
-    <div class="container">
-        <a class="js-scroll" href="#page-top"><img src="./img/logo.png" class="img-fluid"></a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-        </button>
-        <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll active" href="index.html">首頁</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll" href="#about">個人簡介</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll" href="#service">專業技能</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll" href="#work">開發實績</a>
-                </li>
-            </ul>
-        </div>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top"><img src="./assets/img/logo.png" alt="徐雅玟 Wendy Shu"></a>
+      <button class="nav-toggle" aria-label="開啟選單">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">個人簡介</a></li>
+        <li><a href="#skills">專業技能</a></li>
+        <li><a href="#experience">經歷</a></li>
+        <li><a href="#work">開發實績</a></li>
+      </ul>
     </div>
-    </nav>
+  </nav>
 
-    <!-- ======= Intro Section ======= -->
-    <!--<div id="home" class="intro route bg-image" style="background-image: url(assets/img/pic.jpg)">
-    <div class="overlay-itro"></div>
-        <div class="intro-content display-table">
-            <div class="table-cell">
-                <div class="container">
-                    <h1 class="intro-title mb-4">I am Wendy</h1>
-                    <p class="intro-subtitle"><span class="text-slider-items">Web Developer,Web Designer,Frontend Developer,Graphic Designer</span><strong class="text-slider"></strong></p>
-                </div>
-            </div>
+  <main id="top">
+
+    <!-- Hero -->
+    <header class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow">Full-Stack / Software Engineer</p>
+        <h1>徐雅玟<br>Wendy Shu</h1>
+        <p class="hero-role">軟體工程師</p>
+        <p class="hero-bio">現任全景軟體軟體工程師，以 Vue.js 與 C# / .NET Core 開發銀行及政府機關的文件影像管理系統，並主導無障礙網站開發，協助永豐 WebATM 取得 AAA 認證。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:yawendyshu@gmail.com">Email 聯絡我</a>
+          <a class="btn btn-outline" href="./assets/docs/CV-2.pdf" download>下載 CV</a>
         </div>
-    </div><!-- End Intro Section -->
+      </div>
+      <div class="hero-photo">
+        <img src="./assets/img/profile.jpg" alt="徐雅玟" width="220" height="220">
+      </div>
+    </header>
 
-    <main id="main">
-
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about-mf sect-pt4 route">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="box-shadow-full">
-                            <div class="title-box-2">
-                                <h5 class="title-a">
-                                    個人簡介
-                                </h5>
-                                <div class="line-mf"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="profile row">
-                                        <div class="col-xs">
-                                            <div class="about-img">
-                                                <img src="./img/profile.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                                            </div>
-                                            <div class="about-info">
-                                                <p><span class="title-s">姓名: </span> <span>徐雅玟</span></p>
-                                                <p><span class="title-s">職稱: </span> <span>電商工程師</span></p>
-                                                <p>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
-                                                      <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
-                                                      <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
-                                                    </svg>
-                                                    <a href="./doc/CV.pdf" download>CV pdf. for download</a>
-                                                </p>
-                                                <p><span class="title-s">Email: </span> <a href="mailto:yawendyshu@gmail.com">yawendyshu@gmail.com</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-c">
-                                        <h3 class="title">專業技能</h3>
-                                        <div class="skill-mf">
-                                            <span>HTML</span> <span class="pull-right">90%</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>CSS3</span> <span class="pull-right">90%</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>SASS/SCSS</span> <span class="pull-right">90%</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>JavaScript</span> <span class="pull-right">80%</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <span>Vue</span> <span class="pull-right">80%</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-c">
-                                        <h3 class="title">技能證照</h3>
-                                        <div class="certification">
-                                            <div>
-                                                <p>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
-                                                        <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
-                                                        <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
-                                                    </svg>
-                                                    <a href="./doc/AI900_Microsoft_Azure_AI_Fundamentals.pdf" download>AI-900: Microsoft Azure AI Fundamentals</a>
-                                                </p>
-                                            </div> 
-                                            <div>
-                                                <p>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
-                                                        <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
-                                                        <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
-                                                    </svg>
-                                                    <a href="https://skillshop.exceedlms.com/student/award/5ycfgzBWMLaQ8wdiQ1hwhomE" download>Google Analytics 4.0</a>
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <p>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
-                                                        <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
-                                                        <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
-                                                    </svg>
-                                                    <a href="" download>TOEIC 635</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="about-me pt-4 pt-md-0">
-                                        <div class="timeline">
-                                            <div class="event">
-                                                <div class="date">Jul. 2022 - Present</div>
-                                                <ul class="description">
-                                                    <h4><strong>良興股份有限公司 電商工程師</strong></h4>
-                                                    <span>
-                                                        進行公司內部的網頁開發與<a href="https://www.eclife.com.tw/">EcLife購物網</a>、<a href="https://myepson.epson.com.tw/">Epson購物網</a>等品牌代操的購物網維護，以及專案開發。開發Hoya2.0讓服務員能夠更即時的解決客戶的問題，<strong>上線第一個星期已有78名服務員使用，目前已解決上百位消費者的問題。</strong>
-                                                    </span>
-                                                    <li>
-                                                        負責開發專案的前端設計，和UIUX設計師溝通後，用HTML5、SCSS搭配Bootstrap刻出畫面，並以Vue.JS框架做開發。
-                                                    </li>
-                                                    <li>
-                                                        在開發專案中負責與後端溝通畫面所需的資料，並運用Postman與得到JSON格式資料去做API串接。
-                                                    </li>
-                                                    <li>
-                                                        運用Google Search Console發現網頁問題，並修復提升SEO排名，從原來的第63名提升至第22名。
-                                                    </li>
-                                                    <li>
-                                                        零售業產品PBI分析與銷售策略學習，運用Power BI、Google Search Console等數位工具分析商品的銷售，找出商品在市場的利與弊。
-                                                    </li>
-                                                    <li>
-                                                        網頁設計實習生: 電子報、EDM 模板設計，並使用GA UTM追蹤成效，實習後獲主管青睞轉正。
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="event">
-                                                <div class="date">Aug. 2022 - Jan. 2023</div>
-                                                <ul class="description">
-                                                    <h4><strong>芬蘭 Business Information Technology 開發課程</strong></h4>
-                                                    <span>
-                                                        課程將貿易和科技結合，在Introduction to Mobile App Design and Development的課程中，學習架設與開發網站，並從中獲得成就感。
-                                                    </span>
-                                                    <li>
-                                                        在團體成果報告中，我們運用Figma設計一個UI介面，獲得指導老師與Nokia評審們的肯定。
-                                                    </li>
-                                                    <li>
-                                                        在個人報告方面，學習在Angular框架下製作APP，運用API串接The Movie Database（TMDb），開發一個電影介紹的APP。
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="event">
-                                                <div class="date">2021 - 2023</div>
-                                                <ul class="description">
-                                                    <h4><strong>人工智慧 機器學習專研</strong></h4>
-                                                    <li>
-                                                        畢業專題中負責運用OpenCV，導入資料庫訓練模型，並在相機打開時能夠運用訓練好的模型來偵測與辨識人臉。
-                                                    </li>
-                                                    <li>
-                                                        運用Microsoft Azure AI Model訓練出能分辨物種，並在AI-900的測驗中，拿到873的高分。
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="event">
-                                                <div class="date">Oct. 2021</div>
-                                                <ul class="description">
-                                                    <h4><strong>LINE FRESH  2021 校園競賽</strong></h4>
-                                                    <span>
-                                                        隨著數位時代的來臨，傳統產業已無法滿足消費者，因而數位轉型已成為必經之路。此次比賽運用LINE工具，如：LINE熱點、LINE購物等，並運用API串接與LINE Bot技術達到數位轉型的目的。
-                                                    </span>
-                                                    <li>
-                                                        首次接觸API，了解LINE Bot 運作流程後，預設並列出使用者的疑問以及傳訊息的目的，再用Messaging API做簡單自動回覆（文字及貼圖）。
-                                                    </li>
-                                                    <li>
-                                                        在團體中擔任專案負責人，最終得到進入複賽的資格 。
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!-- End About Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="service" class="services-mf route">
+    <!-- About -->
+    <section id="about">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                專業技能
-              </h3>
-              <div class="line-mf"></div>
-            </div>
+        <h2 class="section-title">個人簡介</h2>
+        <div class="about-body">
+          <div class="about-text">
+            <p>現於全景軟體股份有限公司擔任軟體工程師，以 Vue.js、C# / .NET Core 開發與維護銀行及政府機關的文件影像管理系統，工作涵蓋前後端開發、多國語系、無障礙網站、單元測試與弱點掃描，確保系統兼具良好使用性、相容性與資訊安全。曾主責 WebATM 無障礙功能開發，協助永豐銀行 WebATM 取得 AAA 無障礙認證。</p>
+            <p>具備 Full-Stack 開發能力，從前端介面、後端 API、資料庫設計串接到單元測試、弱點掃描皆有實務經驗，能掌握從開發到驗證的完整流程。善於從使用者回饋與實際工作情境中發掘需求，將問題轉化為可落地的解決方案，並持續優化與改進現有功能或流程。</p>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-6 col-md-3">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="ion-paintbrush"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">視覺傳達</h2>
-                <p class="s-description text-center">
-                  Photoshop、Illustrator、Figma、平面設計、EDM製作、網頁切版
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="ion-monitor"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">前端開發</h2>
-                <p class="s-description text-center">
-                  HTML、CSS、JavaScript、Bootstrap、Vue.js、API串接應用
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="ion-code-working"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">後端開發</h2>
-                <p class="s-description text-center">
-                  瞭解Asp.net Core MVC架構、<br>SQL語法、Node.js
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="ion-code-working"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">其他</h2>
-                <p class="s-description text-center">
-                  C、Java、GitHub、Git版本控制、Sourcetree、SEO優化、跨部門溝通
-                </p>
-              </div>
-            </div>
-          </div>
+          <dl class="about-facts">
+            <dt>姓名</dt>
+            <dd>徐雅玟</dd>
+            <dt>職稱</dt>
+            <dd>軟體工程師</dd>
+            <dt>Email</dt>
+            <dd><a href="mailto:yawendyshu@gmail.com">yawendyshu@gmail.com</a></dd>
+            <dt>履歷</dt>
+            <dd><a href="./assets/docs/CV-2.pdf" download>下載 CV (PDF)</a></dd>
+          </dl>
         </div>
       </div>
     </section>
-    <!-- End Services Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="title-box text-center">
-                        <h3 class="title-a">開發實績</h3>
-                        <div class="line-mf"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="work-box">
-                            <div class="work-img">
-                                <img src="./img/Hoya.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="work-content">
-                                <div class="row">
-                                <h2 class="w-title"><strong>Hoya 2.0</strong></h2>
-                                    <div class="w-more">
-                                        <span class="w-ctegory">公司內部的網站開發，數位工具後台（聊天模組、權限管理、數據分析）等靜態畫面切版、API串接。Hoya 2.0讓服務員能夠更即時的解決客戶的問題。</span>
-                                    </div>
-                                    <span class="w-tag">#Vue #靜態網站開發 #API串接 #RWD</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work-box">
-                            <a href="assets/img/oi.png">
-                                <div class="work-img">
-                                    <img src="./img/MovieApp.jpg" alt="" class="img-fluid">
-                                </div>
-                            </a>
-                            <div class="work-content">
-                                <div class="row">
-                                <h2 class="w-title"><strong>MovieApp</strong></h2>
-                                    <div class="w-more">
-                                        <span class="w-ctegory">在芬蘭研習的研究以運用Ionic為主，編譯不同形式的畫面。此App以Angular為框架，並串接The Movie Database（TMDb）導入資料。</span>
-                                    </div>
-                                    <span class="w-tag">#Ionic Framework #Angular #資料庫導入</span>
-                                </div>
-                                <div class="row">
-                                    <div class="link">
-                                        <a href="https://github.com/keybum0909/MovieApp">Github ></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work-box">
-                            <a href="https://www.oifly.com/">
-                                <div class="work-img">
-                                    <img src="./img/Tetris.jpg" alt="" class="img-fluid">
-                                </div>
-                            </a>
-                            <div class="work-content">
-                                <div class="row">
-                                    <h2 class="w-title"><strong>Game Tetris</strong></h2>
-                                    <div class="w-more">
-                                        <span class="w-ctegory">求學階段對於遊戲有極大興趣，因此我以俄羅斯方塊發想，設計出完整的遊戲頁面。從輸入姓名、遊戲頁面再到最後的記分板皆由Java撰寫而成。</span>
-                                    </div>
-                                    <span class="w-tag">#Java #資料庫 #遊戲開發</span>
-                                </div>
-                                <div class="row">
-                                    <div class="link">
-                                        <a href="./doc/Java - Tetris.pdf">點我查看 ></a>
-                                    </div>
-                                    <div class="link">
-                                        <a href="https://github.com/keybum0909/Java-game-tetris-">Github ></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work-box">
-                            <a href="https://oichat.herokuapp.com/">
-                                <div class="work-img">
-                                    <img src="./img/Eye_Redirection.jpg" alt="" class="img-fluid">
-                                </div>
-                            </a>
-                            <div class="work-content">
-                                <div class="row">
-                                    <h2 class="w-title"><strong>Eye Redirection</strong></h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">以筆記型電腦上的攝像頭進行實作，在編程上搭配OpenCV來協助使用者在不用看著攝像頭的情況下，也能夠將視線修正。</span>
-                                        </div>
-                                        <span class="w-tag">#人工智慧 #機器學習 #人臉辨識 #OpenCV #TensorFlow</span>
-                                    </div>
-                                    <div class="row">
-                                        <div class="link">
-                                            <a href="./doc/Eye Redirection.pdf">查看論文內容 ></a>
-                                        </div>
-                                        <div class="link">
-                                            <a href="https://github.com/keybum0909/eye-redirection">Github ></a>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work-box">
-                            <a href="assets/img/oi.png">
-                                <div class="work-img">
-                                    <img src="./img/Online_Cooking.jpg" alt="" class="img-fluid">
-                                </div>
-                            </a>
-                            <div class="work-content">
-                                <div class="row">
-                                <h2 class="w-title"><strong>Online Cooking</strong></h2>
-                                    <div class="w-more">
-                                        <span class="w-ctegory">新冠肺炎爆發期間與組員們設計出線上教學平台。同時，為在此領域自我精進，我利用課後時間學習UI相關知識，將上課撰寫的文獻利用Figma呈現。</span>
-                                    </div>
-                                    <span class="w-tag">#UIUX #Figma #系統流程設計</span>
-                                </div>
-                                <div class="row">
-                                    <div class="link">
-                                        <a href="./doc/Online_Cooking.pdf">點我查看 ></a>
-                                    </div>
-                                    <div class="link">
-                                        <a href="https://www.figma.com/proto/DrNCAzDUrUa4w8ofNUTaT0/online-cooking?node-id=2-2&starting-point-node-id=2%3A2&mode=design&t=sHXjU5Ebzv35YJ0k-1">Figma ></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="work-box">
-                            <a href="assets/img/oi.png">
-                                <div class="work-img">
-                                    <img src="./img/EDM.jpg" alt="" class="img-fluid">
-                                </div>
-                            </a>
-                            <div class="work-content">
-                                <div class="row">
-                                <h2 class="w-title"><strong>品牌代操EDM設計</strong></h2>
-                                    <div class="w-more">
-                                        <span class="w-ctegory">每個月底和個節日活動為代操的品牌(Epson、Linksys等)做文宣、一頁式網站以及電子報。</span>
-                                    </div>
-                                    <span class="w-tag">平面設計 #切版 #RWD</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">專業技能</h2>
+
+        <div class="skill-group">
+          <h3>視覺傳達</h3>
+          <div class="tag-list">
+            <span class="tag">Photoshop</span>
+            <span class="tag">Illustrator</span>
+            <span class="tag">Figma</span>
+            <span class="tag">平面設計</span>
+            <span class="tag">EDM 製作</span>
+            <span class="tag">網頁切版</span>
+          </div>
         </div>
+
+        <div class="skill-group">
+          <h3>前端開發</h3>
+          <div class="tag-list">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS / SASS / SCSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">Vue.js</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>後端開發</h3>
+          <div class="tag-list">
+            <span class="tag">ASP.NET Core</span>
+            <span class="tag">MVC</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Node.js</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>其他</h3>
+          <div class="tag-list">
+            <span class="tag">C++</span>
+            <span class="tag">Java</span>
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">Sourcetree</span>
+            <span class="tag">MS Test</span>
+            <span class="tag">SEO 優化</span>
+            <span class="tag">無障礙網站開發</span>
+          </div>
+        </div>
+
+        <div class="certs">
+          <h3>技能證照</h3>
+          <ul>
+            <li><a href="./assets/docs/AI900_Microsoft_Azure_AI_Fundamentals.pdf" download>AI-900: Microsoft Azure AI Fundamentals</a></li>
+            <li><a href="https://skillshop.exceedlms.com/student/award/5ycfgzBWMLaQ8wdiQ1hwhomE" target="_blank" rel="noopener">Google Analytics 4.0</a></li>
+            <li>TOEIC 635</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    </main><!-- End #main -->
+    <!-- Experience -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title">經歷</h2>
+        <div class="timeline">
+          <div class="timeline-event">
+            <div class="timeline-date">2024.07 – 至今</div>
+            <h3>全景軟體股份有限公司 ‧ 軟體工程師</h3>
+            <p>負責公司影管系統前後端功能維護與開發 ，協助銀行及政府機關推動文件電子化，將文件集中於系統中管理，提升文件保存。透過權限管理機制控管文件及資料存取範圍，確保敏感資訊僅由授權人員存取，強化企業文件的安全管理。使用 Vue.js、C# / .NET Core 進行系統前後端開發與維護，工作範圍涵蓋多國語系、無障礙網站、單元測試、弱點掃描及問題排查等，確保系統具備良好的使用性、相容性與資訊安全性。</p>
+            <ul>
+              <li>負責WebATM無障礙功能的開發，協助<a href="https://webatm.sinopac.com/">永豐WebATM</a>取得AAA認證。</li>
+              <li>協助3項文件影像管理系統（DIMS）和文件檢視器（DIWV）的建置案，以及12家銀行和政府機構的維護和升級項目。</li>
+              <li>開發電子填單系統（DIAS），並將其與DIMS範本表單整合，使文件影像管理系統（DIMS）加完善。</li>
+              <li>開發加密/解密工具，幫助專案經理提高工作效率。</li>
+            </ul>
+          </div>
 
-    <footer>
-        <div class="credits">&copy; 2024 Wendy SHU. 所有權利保留。</div>
-    </footer>
+          <div class="timeline-event">
+            <div class="timeline-date">2023.07 – 2024.06</div>
+            <h3>良興股份有限公司 ‧ 前端工程師</h3>
+            <p>負責公司內部網頁開發，以及 <a href="https://www.eclife.com.tw/">EcLife購物網</a>、<a href="https://myepson.epson.com.tw/">Epson購物網</a>等品牌代操購物網的維護與專案開發。開發 Hoya 2.0 讓服務員更即時解決客戶問題，上線首週已有 78 名服務員使用，目前已解決上百位消費者的問題。</p>
+            <ul>
+              <li>負責專案前端設計，與 UI/UX 設計師溝通後以 HTML5、SCSS 搭配 Bootstrap 刻畫面，並以 Vue.js 開發。</li>
+              <li>與後端溝通畫面所需資料，運用 Postman 取得 JSON 資料並完成 API 串接。</li>
+              <li>運用 Google Search Console 發現並修復網頁問題，SEO 排名由第 63 名提升至第 22 名。</li>
+              <li>運用 Power BI、Google Search Console 分析零售商品銷售策略。</li>
+              <li>網頁設計實習生起步：負責電子報、EDM 模板設計並以 GA UTM 追蹤成效，實習後獲主管青睞轉正。</li>
+            </ul>
+          </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./index.js"></script>
-    </body>
+          <div class="timeline-event">
+            <div class="timeline-date">2022.08 – 2023.01</div>
+            <h3>芬蘭 ‧ Business Information Technology 開發課程</h3>
+            <p>課程結合貿易與科技，於 Introduction to Mobile App Design and Development 課程中學習架設與開發網站。</p>
+            <ul>
+              <li>團體專題以 Figma 設計 UI 介面，獲指導老師與 Nokia 評審肯定。</li>
+              <li>個人專題在 Angular 框架下開發 App，串接 The Movie Database（TMDb）API，製作電影介紹應用。</li>
+            </ul>
+          </div>
+
+          <div class="timeline-event">
+            <div class="timeline-date">2021 – 2023</div>
+            <h3>人工智慧 ‧ 機器學習專研</h3>
+            <ul>
+              <li>畢業專題運用 OpenCV 導入資料庫訓練模型，於相機開啟時偵測與辨識人臉。</li>
+              <li>運用 Microsoft Azure AI 訓練物種辨識模型，AI-900 測驗取得 873 高分。</li>
+            </ul>
+          </div>
+
+          <div class="timeline-event">
+            <div class="timeline-date">2021.10</div>
+            <h3>LINE FRESH 2021 校園競賽</h3>
+            <p>運用 LINE 熱點、LINE 購物等工具，結合 API 串接與 LINE Bot 技術達成數位轉型。</p>
+            <ul>
+              <li>首次接觸 API，了解 LINE Bot 運作流程後，以 Messaging API 完成自動回覆（文字及貼圖）。</li>
+              <li>擔任團隊專案負責人，最終取得複賽資格。</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work">
+      <div class="container">
+        <h2 class="section-title">開發實績</h2>
+        <div class="work-grid">
+
+          <article class="work-item">
+            <div class="work-item-img">
+              <img src="./assets/img/Hoya.jpg" alt="Hoya 2.0" loading="lazy">
+            </div>
+            <h3>Hoya 2.0</h3>
+            <p>公司內部數位工具後台（聊天模組、權限管理、數據分析）靜態畫面切版與 API 串接，讓服務員更即時解決客戶問題。</p>
+            <div class="work-tags">Vue ‧ 靜態網站開發 ‧ API 串接 ‧ RWD</div>
+          </article>
+
+          <article class="work-item">
+            <div class="work-item-img">
+              <img src="./assets/img/MovieApp.jpg" alt="MovieApp" loading="lazy">
+            </div>
+            <h3>MovieApp</h3>
+            <p>芬蘭研習期間以 Angular 為框架，串接 The Movie Database（TMDb）API 導入電影資料。</p>
+            <div class="work-tags">Ionic Framework ‧ Angular ‧ 資料庫導入</div>
+            <div class="work-links">
+              <a href="https://github.com/keybum0909/MovieApp" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="work-item">
+            <div class="work-item-img">
+              <img src="./assets/img/Tetris.jpg" alt="Game Tetris" loading="lazy">
+            </div>
+            <h3>Game Tetris</h3>
+            <p>以俄羅斯方塊發想，設計完整遊戲頁面，從輸入姓名、遊戲畫面到記分板皆由 Java 撰寫而成。</p>
+            <div class="work-tags">Java ‧ 資料庫 ‧ 遊戲開發</div>
+            <div class="work-links">
+              <a href="./assets/docs/Java - Tetris.pdf">查看內容 →</a>
+              <a href="https://github.com/keybum0909/Java-game-tetris-" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="work-item">
+            <div class="work-item-img">
+              <img src="./assets/img/Eye_Redirection.jpg" alt="Eye Redirection" loading="lazy">
+            </div>
+            <h3>Eye Redirection</h3>
+            <p>以筆電攝像頭實作，搭配 OpenCV 協助使用者在不直視鏡頭的情況下修正視線方向。</p>
+            <div class="work-tags">人工智慧 ‧ 機器學習 ‧ 人臉辨識 ‧ OpenCV ‧ TensorFlow</div>
+            <div class="work-links">
+              <a href="./assets/docs/Eye Redirection.pdf">查看論文 →</a>
+              <a href="https://github.com/keybum0909/eye-redirection" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="work-item">
+            <div class="work-item-img">
+              <img src="./assets/img/Online_Cooking.jpg" alt="Online Cooking" loading="lazy">
+            </div>
+            <h3>Online Cooking</h3>
+            <p>新冠肺炎期間與組員設計線上教學平台，並自學 UI 相關知識，以 Figma 呈現系統流程設計。</p>
+            <div class="work-tags">UI/UX ‧ Figma ‧ 系統流程設計</div>
+            <div class="work-links">
+              <a href="./assets/docs/Online_Cooking.pdf">查看內容 →</a>
+              <a href="https://www.figma.com/proto/DrNCAzDUrUa4w8ofNUTaT0/online-cooking?node-id=2-2&starting-point-node-id=2%3A2&mode=design&t=sHXjU5Ebzv35YJ0k-1" target="_blank" rel="noopener">Figma →</a>
+            </div>
+          </article>
+
+          <article class="work-item">
+            <div class="work-item-img">
+              <img src="./assets/img/EDM.jpg" alt="品牌代操 EDM 設計" loading="lazy">
+            </div>
+            <h3>品牌代操 EDM 設計</h3>
+            <p>每月與各節日活動為代操品牌（Epson、Linksys 等）製作文宣、一頁式網站與電子報。</p>
+            <div class="work-tags">平面設計 ‧ 切版 ‧ RWD</div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <span>&copy; 2026 Wendy Shu. All rights reserved.</span>
+    <a href="mailto:yawendyshu@gmail.com">yawendyshu@gmail.com</a>
+  </footer>
+
+  <button class="back-to-top" aria-label="回到最上方">↑</button>
+
+  <script src="./assets/js/main.js"></script>
+</body>
 </html>
