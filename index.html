@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>徐雅玟 ‧ 作品集</title>
+  <title data-i18n="meta.title">徐雅玟 ‧ 作品集</title>
   <meta name="description" content="徐雅玟（Wendy Shu）軟體工程師作品集，Full-Stack 開發、無障礙網站與資訊安全實務經歷。">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -12,15 +12,15 @@
   <nav class="site-nav">
     <div class="nav-inner">
       <a class="nav-brand" href="#top"><img src="./assets/img/logo.png" alt="徐雅玟 Wendy Shu"></a>
-      <button class="nav-toggle" aria-label="開啟選單">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="#about">個人簡介</a></li>
-        <li><a href="#skills">專業技能</a></li>
-        <li><a href="#experience">經歷</a></li>
-        <li><a href="#work">開發實績</a></li>
-      </ul>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="nav.about">個人簡介</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">專業技能</a></li>
+          <li><a href="#experience" data-i18n="nav.experience">經歷</a></li>
+          <li><a href="#work" data-i18n="nav.work">開發實績</a></li>
+        </ul>
+        <button class="lang-toggle" id="lang-toggle" aria-label="切換語言 / Switch language">EN</button>
+      </div>
     </div>
   </nav>
 
@@ -31,11 +31,11 @@
       <div class="hero-text">
         <p class="eyebrow">Full-Stack / Software Engineer</p>
         <h1>徐雅玟<br>Wendy Shu</h1>
-        <p class="hero-role">軟體工程師</p>
-        <p class="hero-bio">現任全景軟體軟體工程師，以 Vue.js 與 C# / .NET Core 開發銀行及政府機關的文件影像管理系統，並主導無障礙網站開發，協助永豐 WebATM 取得 AAA 認證。</p>
+        <p class="hero-role" data-i18n="hero.role">軟體工程師</p>
+        <p class="hero-bio" data-i18n="hero.bio">現任全景軟體軟體工程師，以 Vue.js 與 C# / .NET Core 開發銀行及政府機關的文件影像管理系統，並主導無障礙網站開發，協助永豐 WebATM 取得 AAA 認證。</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:yawendyshu@gmail.com">Email 聯絡我</a>
-          <a class="btn btn-outline" href="./assets/docs/CV-2.pdf" download>下載 CV</a>
+          <a class="btn btn-primary" href="mailto:yawendyshu@gmail.com" data-i18n="hero.emailBtn">Email 聯絡我</a>
+          <a class="btn btn-outline" href="./assets/docs/CV-2.pdf" download data-i18n="hero.cvBtn">下載 CV</a>
         </div>
       </div>
       <div class="hero-photo">
@@ -46,21 +46,21 @@
     <!-- About -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title">個人簡介</h2>
+        <h2 class="section-title" data-i18n="about.title">個人簡介</h2>
         <div class="about-body">
           <div class="about-text">
-            <p>現於全景軟體股份有限公司擔任軟體工程師，以 Vue.js、C# / .NET Core 開發與維護銀行及政府機關的文件影像管理系統，工作涵蓋前後端開發、多國語系、無障礙網站、單元測試與弱點掃描，確保系統兼具良好使用性、相容性與資訊安全。曾主責 WebATM 無障礙功能開發，協助永豐銀行 WebATM 取得 AAA 無障礙認證。</p>
-            <p>具備 Full-Stack 開發能力，從前端介面、後端 API、資料庫設計串接到單元測試、弱點掃描皆有實務經驗，能掌握從開發到驗證的完整流程。善於從使用者回饋與實際工作情境中發掘需求，將問題轉化為可落地的解決方案，並持續優化與改進現有功能或流程。</p>
+            <p data-i18n="about.text1">現於全景軟體股份有限公司擔任軟體工程師，以 Vue.js、C# / .NET Core 開發與維護銀行及政府機關的文件影像管理系統，工作涵蓋前後端開發、多國語系、無障礙網站、單元測試與弱點掃描，確保系統兼具良好使用性、相容性與資訊安全。曾主責 WebATM 無障礙功能開發，協助永豐銀行 WebATM 取得 AAA 無障礙認證。</p>
+            <p data-i18n="about.text2">具備 Full-Stack 開發能力，從前端介面、後端 API、資料庫設計串接到單元測試、弱點掃描皆有實務經驗，能掌握從開發到驗證的完整流程。善於從使用者回饋與實際工作情境中發掘需求，將問題轉化為可落地的解決方案，並持續優化與改進現有功能或流程。</p>
           </div>
           <dl class="about-facts">
-            <dt>姓名</dt>
+            <dt data-i18n="about.dt.name">姓名</dt>
             <dd>徐雅玟</dd>
-            <dt>職稱</dt>
-            <dd>軟體工程師</dd>
-            <dt>Email</dt>
+            <dt data-i18n="about.dt.title">職稱</dt>
+            <dd data-i18n="about.dd.title">軟體工程師</dd>
+            <dt data-i18n="about.dt.email">Email</dt>
             <dd><a href="mailto:yawendyshu@gmail.com">yawendyshu@gmail.com</a></dd>
-            <dt>履歷</dt>
-            <dd><a href="./assets/docs/CV-2.pdf" download>下載 CV (PDF)</a></dd>
+            <dt data-i18n="about.dt.cv">履歷</dt>
+            <dd><a href="./assets/docs/CV-2.pdf" download data-i18n="about.dd.cv">下載 CV (PDF)</a></dd>
           </dl>
         </div>
       </div>
@@ -69,22 +69,22 @@
     <!-- Skills -->
     <section id="skills">
       <div class="container">
-        <h2 class="section-title">專業技能</h2>
+        <h2 class="section-title" data-i18n="skills.title">專業技能</h2>
 
         <div class="skill-group">
-          <h3>視覺傳達</h3>
+          <h3 data-i18n="skills.visual">視覺傳達</h3>
           <div class="tag-list">
             <span class="tag">Photoshop</span>
             <span class="tag">Illustrator</span>
             <span class="tag">Figma</span>
-            <span class="tag">平面設計</span>
-            <span class="tag">EDM 製作</span>
-            <span class="tag">網頁切版</span>
+            <span class="tag" data-i18n="skills.tag.graphic">平面設計</span>
+            <span class="tag" data-i18n="skills.tag.edm">EDM 製作</span>
+            <span class="tag" data-i18n="skills.tag.slicing">網頁切版</span>
           </div>
         </div>
 
         <div class="skill-group">
-          <h3>前端開發</h3>
+          <h3 data-i18n="skills.frontend">前端開發</h3>
           <div class="tag-list">
             <span class="tag">HTML</span>
             <span class="tag">CSS / SASS / SCSS</span>
@@ -95,7 +95,7 @@
         </div>
 
         <div class="skill-group">
-          <h3>後端開發</h3>
+          <h3 data-i18n="skills.backend">後端開發</h3>
           <div class="tag-list">
             <span class="tag">ASP.NET Core</span>
             <span class="tag">MVC</span>
@@ -105,20 +105,20 @@
         </div>
 
         <div class="skill-group">
-          <h3>其他</h3>
+          <h3 data-i18n="skills.other">其他</h3>
           <div class="tag-list">
             <span class="tag">C++</span>
             <span class="tag">Java</span>
             <span class="tag">Git / GitHub</span>
             <span class="tag">Sourcetree</span>
             <span class="tag">MS Test</span>
-            <span class="tag">SEO 優化</span>
-            <span class="tag">無障礙網站開發</span>
+            <span class="tag" data-i18n="skills.tag.seo">SEO 優化</span>
+            <span class="tag" data-i18n="skills.tag.a11y">無障礙網站開發</span>
           </div>
         </div>
 
         <div class="certs">
-          <h3>技能證照</h3>
+          <h3 data-i18n="certs.title">技能證照</h3>
           <ul>
             <li><a href="./assets/docs/AI900_Microsoft_Azure_AI_Fundamentals.pdf" download>AI-900: Microsoft Azure AI Fundamentals</a></li>
             <li><a href="https://skillshop.exceedlms.com/student/award/5ycfgzBWMLaQ8wdiQ1hwhomE" target="_blank" rel="noopener">Google Analytics 4.0</a></li>
@@ -131,59 +131,59 @@
     <!-- Experience -->
     <section id="experience">
       <div class="container">
-        <h2 class="section-title">經歷</h2>
+        <h2 class="section-title" data-i18n="experience.title">經歷</h2>
         <div class="timeline">
           <div class="timeline-event">
-            <div class="timeline-date">2024.07 – 至今</div>
-            <h3>全景軟體股份有限公司 ‧ 軟體工程師</h3>
-            <p>負責公司影管系統前後端功能維護與開發 ，協助銀行及政府機關推動文件電子化，將文件集中於系統中管理，提升文件保存。透過權限管理機制控管文件及資料存取範圍，確保敏感資訊僅由授權人員存取，強化企業文件的安全管理。使用 Vue.js、C# / .NET Core 進行系統前後端開發與維護，工作範圍涵蓋多國語系、無障礙網站、單元測試、弱點掃描及問題排查等，確保系統具備良好的使用性、相容性與資訊安全性。</p>
+            <div class="timeline-date"><span data-i18n="exp.e1.date">2024.07 – 至今</span></div>
+            <h3 data-i18n="exp.e1.h3">全景軟體股份有限公司 ‧ 軟體工程師</h3>
+            <p data-i18n="exp.e1.p">負責公司影管系統前後端功能維護與開發 ，協助銀行及政府機關推動文件電子化，將文件集中於系統中管理，提升文件保存。透過權限管理機制控管文件及資料存取範圍，確保敏感資訊僅由授權人員存取，強化企業文件的安全管理。使用 Vue.js、C# / .NET Core 進行系統前後端開發與維護，工作範圍涵蓋多國語系、無障礙網站、單元測試、弱點掃描及問題排查等，確保系統具備良好的使用性、相容性與資訊安全性。</p>
             <ul>
-              <li>負責WebATM無障礙功能的開發，協助<a href="https://webatm.sinopac.com/">永豐WebATM</a>取得AAA認證。</li>
-              <li>協助3項文件影像管理系統（DIMS）和文件檢視器（DIWV）的建置案，以及12家銀行和政府機構的維護和升級項目。</li>
-              <li>開發電子填單系統（DIAS），並將其與DIMS範本表單整合，使文件影像管理系統（DIMS）加完善。</li>
-              <li>開發加密/解密工具，幫助專案經理提高工作效率。</li>
+              <li data-i18n-html="exp.e1.li1">負責WebATM無障礙功能的開發，協助<a href="https://webatm.sinopac.com/">永豐WebATM</a>取得AAA認證。</li>
+              <li data-i18n="exp.e1.li2">協助3項文件影像管理系統（DIMS）和文件檢視器（DIWV）的建置案，以及12家銀行和政府機構的維護和升級項目。</li>
+              <li data-i18n="exp.e1.li3">開發電子填單系統（DIAS），並將其與DIMS範本表單整合，使文件影像管理系統（DIMS）加完善。</li>
+              <li data-i18n="exp.e1.li4">開發加密/解密工具，幫助專案經理提高工作效率。</li>
             </ul>
           </div>
 
           <div class="timeline-event">
             <div class="timeline-date">2023.07 – 2024.06</div>
-            <h3>良興股份有限公司 ‧ 前端工程師</h3>
-            <p>負責公司內部網頁開發，以及 <a href="https://www.eclife.com.tw/">EcLife購物網</a>、<a href="https://myepson.epson.com.tw/">Epson購物網</a>等品牌代操購物網的維護與專案開發。開發 Hoya 2.0 讓服務員更即時解決客戶問題，上線首週已有 78 名服務員使用，目前已解決上百位消費者的問題。</p>
+            <h3 data-i18n="exp.e2.h3">良興股份有限公司 ‧ 前端工程師</h3>
+            <p data-i18n-html="exp.e2.p">負責公司內部網頁開發，以及 <a href="https://www.eclife.com.tw/">EcLife購物網</a>、<a href="https://myepson.epson.com.tw/">Epson購物網</a>等品牌代操購物網的維護與專案開發。開發 Hoya 2.0 讓服務員更即時解決客戶問題，上線首週已有 78 名服務員使用，目前已解決上百位消費者的問題。</p>
             <ul>
-              <li>負責專案前端設計，與 UI/UX 設計師溝通後以 HTML5、SCSS 搭配 Bootstrap 刻畫面，並以 Vue.js 開發。</li>
-              <li>與後端溝通畫面所需資料，運用 Postman 取得 JSON 資料並完成 API 串接。</li>
-              <li>運用 Google Search Console 發現並修復網頁問題，SEO 排名由第 63 名提升至第 22 名。</li>
-              <li>運用 Power BI、Google Search Console 分析零售商品銷售策略。</li>
-              <li>網頁設計實習生起步：負責電子報、EDM 模板設計並以 GA UTM 追蹤成效，實習後獲主管青睞轉正。</li>
+              <li data-i18n="exp.e2.li1">負責專案前端設計，與 UI/UX 設計師溝通後以 HTML5、SCSS 搭配 Bootstrap 刻畫面，並以 Vue.js 開發。</li>
+              <li data-i18n="exp.e2.li2">與後端溝通畫面所需資料，運用 Postman 取得 JSON 資料並完成 API 串接。</li>
+              <li data-i18n="exp.e2.li3">運用 Google Search Console 發現並修復網頁問題，SEO 排名由第 63 名提升至第 22 名。</li>
+              <li data-i18n="exp.e2.li4">運用 Power BI、Google Search Console 分析零售商品銷售策略。</li>
+              <li data-i18n="exp.e2.li5">網頁設計實習生起步：負責電子報、EDM 模板設計並以 GA UTM 追蹤成效，實習後獲主管青睞轉正。</li>
             </ul>
           </div>
 
           <div class="timeline-event">
             <div class="timeline-date">2022.08 – 2023.01</div>
-            <h3>芬蘭 ‧ Business Information Technology 開發課程</h3>
-            <p>課程結合貿易與科技，於 Introduction to Mobile App Design and Development 課程中學習架設與開發網站。</p>
+            <h3 data-i18n="exp.e3.h3">芬蘭 ‧ Business Information Technology 開發課程</h3>
+            <p data-i18n="exp.e3.p">課程結合貿易與科技，於 Introduction to Mobile App Design and Development 課程中學習架設與開發網站。</p>
             <ul>
-              <li>團體專題以 Figma 設計 UI 介面，獲指導老師與 Nokia 評審肯定。</li>
-              <li>個人專題在 Angular 框架下開發 App，串接 The Movie Database（TMDb）API，製作電影介紹應用。</li>
+              <li data-i18n="exp.e3.li1">團體專題以 Figma 設計 UI 介面，獲指導老師與 Nokia 評審肯定。</li>
+              <li data-i18n="exp.e3.li2">個人專題在 Angular 框架下開發 App，串接 The Movie Database（TMDb）API，製作電影介紹應用。</li>
             </ul>
           </div>
 
           <div class="timeline-event">
             <div class="timeline-date">2021 – 2023</div>
-            <h3>人工智慧 ‧ 機器學習專研</h3>
+            <h3 data-i18n="exp.e4.h3">人工智慧 ‧ 機器學習專研</h3>
             <ul>
-              <li>畢業專題運用 OpenCV 導入資料庫訓練模型，於相機開啟時偵測與辨識人臉。</li>
-              <li>運用 Microsoft Azure AI 訓練物種辨識模型，AI-900 測驗取得 873 高分。</li>
+              <li data-i18n="exp.e4.li1">畢業專題運用 OpenCV 導入資料庫訓練模型，於相機開啟時偵測與辨識人臉。</li>
+              <li data-i18n="exp.e4.li2">運用 Microsoft Azure AI 訓練物種辨識模型，AI-900 測驗取得 873 高分。</li>
             </ul>
           </div>
 
           <div class="timeline-event">
             <div class="timeline-date">2021.10</div>
-            <h3>LINE FRESH 2021 校園競賽</h3>
-            <p>運用 LINE 熱點、LINE 購物等工具，結合 API 串接與 LINE Bot 技術達成數位轉型。</p>
+            <h3 data-i18n="exp.e5.h3">LINE FRESH 2021 校園競賽</h3>
+            <p data-i18n="exp.e5.p">運用 LINE 熱點、LINE 購物等工具，結合 API 串接與 LINE Bot 技術達成數位轉型。</p>
             <ul>
-              <li>首次接觸 API，了解 LINE Bot 運作流程後，以 Messaging API 完成自動回覆（文字及貼圖）。</li>
-              <li>擔任團隊專案負責人，最終取得複賽資格。</li>
+              <li data-i18n="exp.e5.li1">首次接觸 API，了解 LINE Bot 運作流程後，以 Messaging API 完成自動回覆（文字及貼圖）。</li>
+              <li data-i18n="exp.e5.li2">擔任團隊專案負責人，最終取得複賽資格。</li>
             </ul>
           </div>
 
@@ -194,7 +194,7 @@
     <!-- Work -->
     <section id="work">
       <div class="container">
-        <h2 class="section-title">開發實績</h2>
+        <h2 class="section-title" data-i18n="work.title">開發實績</h2>
         <div class="work-grid">
 
           <article class="work-item">
@@ -202,8 +202,8 @@
               <img src="./assets/img/Hoya.jpg" alt="Hoya 2.0" loading="lazy">
             </div>
             <h3>Hoya 2.0</h3>
-            <p>公司內部數位工具後台（聊天模組、權限管理、數據分析）靜態畫面切版與 API 串接，讓服務員更即時解決客戶問題。</p>
-            <div class="work-tags">Vue ‧ 靜態網站開發 ‧ API 串接 ‧ RWD</div>
+            <p data-i18n="work.hoya.p">公司內部數位工具後台（聊天模組、權限管理、數據分析）靜態畫面切版與 API 串接，讓服務員更即時解決客戶問題。</p>
+            <div class="work-tags" data-i18n="work.hoya.tags">Vue ‧ 靜態網站開發 ‧ API 串接 ‧ RWD</div>
           </article>
 
           <article class="work-item">
@@ -211,8 +211,8 @@
               <img src="./assets/img/MovieApp.jpg" alt="MovieApp" loading="lazy">
             </div>
             <h3>MovieApp</h3>
-            <p>芬蘭研習期間以 Angular 為框架，串接 The Movie Database（TMDb）API 導入電影資料。</p>
-            <div class="work-tags">Ionic Framework ‧ Angular ‧ 資料庫導入</div>
+            <p data-i18n="work.movieapp.p">芬蘭研習期間以 Angular 為框架，串接 The Movie Database（TMDb）API 導入電影資料。</p>
+            <div class="work-tags">Ionic Framework ‧ Angular ‧ <span data-i18n="work.movieapp.tag">資料庫導入</span></div>
             <div class="work-links">
               <a href="https://github.com/keybum0909/MovieApp" target="_blank" rel="noopener">GitHub →</a>
             </div>
@@ -223,10 +223,10 @@
               <img src="./assets/img/Tetris.jpg" alt="Game Tetris" loading="lazy">
             </div>
             <h3>Game Tetris</h3>
-            <p>以俄羅斯方塊發想，設計完整遊戲頁面，從輸入姓名、遊戲畫面到記分板皆由 Java 撰寫而成。</p>
-            <div class="work-tags">Java ‧ 資料庫 ‧ 遊戲開發</div>
+            <p data-i18n="work.tetris.p">以俄羅斯方塊發想，設計完整遊戲頁面，從輸入姓名、遊戲畫面到記分板皆由 Java 撰寫而成。</p>
+            <div class="work-tags">Java ‧ <span data-i18n="work.tetris.tag1">資料庫</span> ‧ <span data-i18n="work.tetris.tag2">遊戲開發</span></div>
             <div class="work-links">
-              <a href="./assets/docs/Java - Tetris.pdf">查看內容 →</a>
+              <a href="./assets/docs/Java - Tetris.pdf" data-i18n="work.viewLink">查看內容 →</a>
               <a href="https://github.com/keybum0909/Java-game-tetris-" target="_blank" rel="noopener">GitHub →</a>
             </div>
           </article>
@@ -236,10 +236,10 @@
               <img src="./assets/img/Eye_Redirection.jpg" alt="Eye Redirection" loading="lazy">
             </div>
             <h3>Eye Redirection</h3>
-            <p>以筆電攝像頭實作，搭配 OpenCV 協助使用者在不直視鏡頭的情況下修正視線方向。</p>
-            <div class="work-tags">人工智慧 ‧ 機器學習 ‧ 人臉辨識 ‧ OpenCV ‧ TensorFlow</div>
+            <p data-i18n="work.eye.p">以筆電攝像頭實作，搭配 OpenCV 協助使用者在不直視鏡頭的情況下修正視線方向。</p>
+            <div class="work-tags" data-i18n="work.eye.tags">人工智慧 ‧ 機器學習 ‧ 人臉辨識 ‧ OpenCV ‧ TensorFlow</div>
             <div class="work-links">
-              <a href="./assets/docs/Eye Redirection.pdf">查看論文 →</a>
+              <a href="./assets/docs/Eye Redirection.pdf" data-i18n="work.paperLink">查看論文 →</a>
               <a href="https://github.com/keybum0909/eye-redirection" target="_blank" rel="noopener">GitHub →</a>
             </div>
           </article>
@@ -249,10 +249,10 @@
               <img src="./assets/img/Online_Cooking.jpg" alt="Online Cooking" loading="lazy">
             </div>
             <h3>Online Cooking</h3>
-            <p>新冠肺炎期間與組員設計線上教學平台，並自學 UI 相關知識，以 Figma 呈現系統流程設計。</p>
-            <div class="work-tags">UI/UX ‧ Figma ‧ 系統流程設計</div>
+            <p data-i18n="work.cooking.p">新冠肺炎期間與組員設計線上教學平台，並自學 UI 相關知識，以 Figma 呈現系統流程設計。</p>
+            <div class="work-tags">UI/UX ‧ Figma ‧ <span data-i18n="work.cooking.tag">系統流程設計</span></div>
             <div class="work-links">
-              <a href="./assets/docs/Online_Cooking.pdf">查看內容 →</a>
+              <a href="./assets/docs/Online_Cooking.pdf" data-i18n="work.viewLink">查看內容 →</a>
               <a href="https://www.figma.com/proto/DrNCAzDUrUa4w8ofNUTaT0/online-cooking?node-id=2-2&starting-point-node-id=2%3A2&mode=design&t=sHXjU5Ebzv35YJ0k-1" target="_blank" rel="noopener">Figma →</a>
             </div>
           </article>
@@ -261,9 +261,9 @@
             <div class="work-item-img">
               <img src="./assets/img/EDM.jpg" alt="品牌代操 EDM 設計" loading="lazy">
             </div>
-            <h3>品牌代操 EDM 設計</h3>
-            <p>每月與各節日活動為代操品牌（Epson、Linksys 等）製作文宣、一頁式網站與電子報。</p>
-            <div class="work-tags">平面設計 ‧ 切版 ‧ RWD</div>
+            <h3 data-i18n="work.edm.h3">品牌代操 EDM 設計</h3>
+            <p data-i18n="work.edm.p">每月與各節日活動為代操品牌（Epson、Linksys 等）製作文宣、一頁式網站與電子報。</p>
+            <div class="work-tags" data-i18n="work.edm.tags">平面設計 ‧ 切版 ‧ RWD</div>
           </article>
 
         </div>
@@ -273,12 +273,13 @@
   </main>
 
   <footer class="container">
-    <span>&copy; 2026 Wendy Shu. All rights reserved.</span>
+    <span>&copy; 2024 Wendy Shu. All rights reserved.</span>
     <a href="mailto:yawendyshu@gmail.com">yawendyshu@gmail.com</a>
   </footer>
 
   <button class="back-to-top" aria-label="回到最上方">↑</button>
 
+  <script src="./assets/js/i18n.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 </html>
